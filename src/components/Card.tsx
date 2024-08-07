@@ -22,7 +22,7 @@ const Card: React.FC<CardProps> = ({ icon, iconBg, title, value, percentage, col
         <div className="text-sm font-bold">{title}</div>
       </div>
       <div className="absolute bottom-2 flex text-sm w-full p-1 md:static md:bottom-auto">
-        <div className="text-4xl font-bold flex-1 md:text-left md:order-1 order-2 md:static absolute bottom-16 right-2">
+        <div className="text-4xl font-bold flex-1 md:text-left md:order-1 order-2 md:static absolute bottom-16 right-2 p-2">
           {value}
         </div>
        
