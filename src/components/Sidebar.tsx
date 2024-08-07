@@ -2,7 +2,7 @@ import React from 'react';
 
 const Sidebar: React.FC = () => {
   return (
-    <div className="w-16 flex flex-col items-center bg-gray-800 text-gray-400">
+    <div className="w-16 flex flex-col items-center bg-gray-800 text-gray-400 max-h-full">
       <div className="flex flex-col items-center flex-grow">
         <span className="p-3">
           <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#5985E1">

@@ -1,3 +1,4 @@
+// NetProfitCard.tsx
 import React from 'react';
 import { Doughnut } from 'react-chartjs-2';
 import { Chart, ArcElement, Tooltip, Legend } from 'chart.js';
@@ -10,7 +11,7 @@ const NetProfitCard: React.FC = () => {
     datasets: [
       {
         data: [70, 30],
-        backgroundColor: ['#1781de', '#2d3748'], // Green and gray colors
+        backgroundColor: ['#1781de', '#2d3748'],
         hoverBackgroundColor: ['#6ec229', '#4a5568'],
         borderWidth: 0,
       },
@@ -18,7 +19,7 @@ const NetProfitCard: React.FC = () => {
   };
 
   const options = {
-    cutout: '70%', // This creates the doughnut hole
+    cutout: '70%',
     plugins: {
       tooltip: {
         callbacks: {
@@ -31,10 +32,10 @@ const NetProfitCard: React.FC = () => {
   };
 
   return (
-    <div className="p-4 bg-gray-800 rounded-lg shadow-lg relative">      
-      <div className="grid grid-cols-2 gap-2 items-center">    
+    <div className="p-4 bg-gray-800 rounded-lg shadow-lg relative">
+      <div className="grid grid-cols-1 gap-2 md:grid-cols-2 items-center">
         <div>
-        <div className="text-md pb-4 mb-4">Net Profit</div>
+          <div className="text-md pb-4 mb-4">Net Profit</div>
           <div className="text-4xl">
             <b>$6759.25</b>
           </div>

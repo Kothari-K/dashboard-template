@@ -4,11 +4,15 @@ const TopBar: React.FC = () => {
   return (
     <div className="flex justify-between items-center p-4 bg-gray-800">
       
-      <input
-        type="text"
-        placeholder="Search..."
-        className="px-4 py-2 bg-gray-700 rounded text-gray-200"
-      />
+      <div className="relative">
+        <input
+          type="text"
+          placeholder="Search..."
+          className="hidden md:block px-4 py-2 bg-gray-700 rounded text-gray-200"
+        />
+        <span className="block md:hidden bg-gray-700 p-1.5 rounded-full shadow-lg">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#F8E6D0"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>        </span>
+      </div>
       <div className="flex space-x-4">
        <span className="bg-gray-700 p-1.5 rounded-full shadow-lg">
        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#EFEFEF"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg>
